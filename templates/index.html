@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type=text/css href="../static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
+
+</head>
+<body>
+<div class="form_box">
+    <img src="../static/image.png" class="sticker">
+    <h3>Hello! Welcome to  our travelling application</h3>
+    <form name="search" action="/" method="POST">
+        <p>Your location</p>
+        <input type="text" name="yourlocation" placeholder="Enter your current location">
+        <p>Where do you want to go?</p>
+        <input type="text" name="nextlocation" placeholder="Enter location">
+        <p>Select Tags: </p>
+        <select name="comp_select" class="selectpicker" data-style="btn-danger" multiple data-max-options="1">
+            <optgroup label='Food'>
+                <option>Restaurant</option>
+                <option>Bar</option>
+                <option>Cafe</option>
+                <option>Food</option>
+                <option>Liquor_Store</option>
+                <option>Meal_Delivery</option>
+                <option>Meal_Takeaway</option>
+            </optgroup>
+            <optgroup label='Transport'>
+                <option>Car_Dealer</option>
+                <option>Car_Rental</option>
+                <option>Car_Repair</option>
+                <option>Car_Wash</option>
+                <option>Bicycle_Store</option>
+                <option>Gas_Station</option>
+                <option>Parking</option>
+                <option>Taxi_Stand</option>
+            </optgroup>
+            <optgroup label='Store'>
+                <option>Book_Store</option>
+                <option>Clothing_Store</option>
+                <option>Convenience_Store</option>
+                <option>Department_Store</option>
+                <option>Furniture_Store</option>
+                <option>Hardware_Store</option>
+                <option>Jewelry_Store</option>
+                <option>Pet_Store</option>
+                <option>Shoe_Store</option>
+                <option>Store</option>
+                <option>Electronics_Store</option>
+            </optgroup>
+            <optgroup label='Public'>
+                <option>Airport</option>
+                <option>Art_Gallery</option>
+                <option>Bus_Station</option>
+                <option>School</option>
+                <option>Rv_Park</option>
+                <option>Stadium</option>
+                <option>Subway_Station</option>
+                <option>Train_Station</option>
+                <option>University</option>
+                <option>Zoo</option>
+                <option>Church</option>
+                <option>Museum</option>
+                <option>Post_Office</option>
+                <option>Church</option>
+                <option>Police</option>
+            </optgroup>
+            <optgroup label='Hz'>
+                <option>Beauty_Salon</option>
+                <option>Hair_Care</option>
+                <option>Gym</option>
+                <option>Dentist</option>
+                <option>Doctor</option>
+                <option>Health</option>
+                <option>Hospital</option>
+                <option>Pharmacy</option>
+                <option>Spa</option>
+            </optgroup>
+        </select>
+        <!--<p>How much money you have?</p>-->
+        <!--<input type="text" name="money" placeholder="Enter your sum">-->
+        <input type="submit" name="submit" value="Search">
+
+    </form>
+
+</div>
+
+
+</body>
+</html>
